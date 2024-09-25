@@ -3,7 +3,13 @@ package modificadores;
  public class Cidade {
 	
 	private String nome;
-	private String estado;
+	private Estado estado;
+	
+	public Cidade(String nome, Estado estado) {
+		this.nome = nome;
+		this.estado = estado;
+	}
+	
 	
 	public String getNome() {
 		return nome;
@@ -11,10 +17,10 @@ package modificadores;
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getEstado() {
+	public Estado getEstado() {
 		return estado;
 	}
-	public void setEstado(String estado) {
+	public void setEstado(Estado estado) {
 		this.estado = estado;
 	}
 
